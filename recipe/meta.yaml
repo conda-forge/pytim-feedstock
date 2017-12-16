@@ -1,6 +1,6 @@
 {% set name = "pytim" %}
-{% set version = "0.6.2" %}
-{% set sha256 = "fe75c8c31f04e3ebbf416b90fc5dd3b71d537855e674974aa86cb50c8a54ff56" %}
+{% set version = "0.6.3" %}
+{% set sha256 = "e0d2f20d90c679e6bc8a4e397b2a030d73f4254ec874c017091b55b06532727a" %}
 
 package:
   name: {{ name|lower }}
