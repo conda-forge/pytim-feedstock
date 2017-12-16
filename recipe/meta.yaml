@@ -28,7 +28,7 @@ requirements:
     - scipy >=0.18
     - numpy >=1.12.0
     - scikit-image >=0.13.0
-    - mdanalysis >=0.15
+    - mdanalysis >=0.16
     - pywavelets >=0.5.2
 
 test:
