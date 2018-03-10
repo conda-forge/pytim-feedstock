@@ -1,6 +1,6 @@
 {% set name = "pytim" %}
-{% set version = "0.6.3" %}
-{% set sha256 = "e0d2f20d90c679e6bc8a4e397b2a030d73f4254ec874c017091b55b06532727a" %}
+{% set version = "0.8.0" %}
+{% set sha256 = "d5a65559becebb30fb1ae7b3b769a10cffa484539c2fb246f8f25271b66dc7eb" %}
 
 package:
   name: {{ name|lower }}
@@ -20,15 +20,16 @@ requirements:
   build:
     - python 
     - setuptools
-    - cython
+    - cython >=0.24.1
+    - scipy >=1.0
     - toolchain
-    - numpy 
+    - numpy >=1.14.0
   run:
-    - python >=2.7,<3
-    - scipy >=0.18
-    - numpy >=1.12.0
+    - python >=2.7
+    - scipy >=1.0
+    - numpy >=1.14.0
     - scikit-image >=0.13.0
-    - mdanalysis >=0.16
+    - mdanalysis >=0.17
     - pywavelets >=0.5.2
 
 test:
