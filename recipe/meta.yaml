@@ -12,22 +12,23 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   skip: True  # [py3k or win]
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
   build:
-    - python 
+    - {{ compiler('c') }}
+  host:
+    - python
     - setuptools
     - cython >=0.24.1
     - scipy >=1.0
-    - toolchain
-    - numpy >=1.14.0
+    - numpy
   run:
-    - python >=2.7
+    - python
     - scipy >=1.0
-    - numpy >=1.14.0
+    - {{ pin_compatible('numpy') }}
     - scikit-image >=0.13.0
     - mdanalysis >=0.17
     - pywavelets >=0.5.2
