@@ -16,14 +16,16 @@ Most major configuration and trajectory formats can be read, thanks to MDAnalysi
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pytim-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pytim-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pytim-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pytim-feedstock)
-Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/pytim-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/pytim-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/pytim-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/pytim-feedstock)
+![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pytim/badges/version.svg)](https://anaconda.org/conda-forge/pytim)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pytim/badges/downloads.svg)](https://anaconda.org/conda-forge/pytim)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pytim-green.svg)](https://anaconda.org/conda-forge/pytim) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pytim.svg)](https://anaconda.org/conda-forge/pytim) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pytim.svg)](https://anaconda.org/conda-forge/pytim) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pytim.svg)](https://anaconda.org/conda-forge/pytim) |
 
 Installing pytim
 ================
