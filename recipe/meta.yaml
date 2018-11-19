@@ -1,6 +1,6 @@
 {% set name = "pytim" %}
-{% set version = "0.8.0" %}
-{% set sha256 = "d5a65559becebb30fb1ae7b3b769a10cffa484539c2fb246f8f25271b66dc7eb" %}
+{% set version = "0.8.1" %}
+{% set sha256 = "93e934beaead8161404579311d547f7d0320ed21d3f54433f75e69b140c2f7c9" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   skip: True  # [py3k or win]
   script: python setup.py install --single-version-externally-managed --record record.txt
 
