@@ -22,7 +22,7 @@ requirements:
     - {{ compiler('cxx') }}
   host:
     - python
-    - setuptools
+    - pip
     - cython >=0.24.1
     - scipy >=1.0
     - numpy
