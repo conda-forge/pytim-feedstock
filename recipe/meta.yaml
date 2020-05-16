@@ -44,8 +44,8 @@ about:
   home: http://github.com/Marcello-Sega/pytim
   license: GPL-3.0
   license_family: GPL
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
-  summary: 'A python based tool for interfacial molecules analysis'
+  license_file: {{ environ["RECIPE_DIR"] }}/LICENSE
+  summary: A python based tool for interfacial molecules analysis
   description: |
     Pytim provides a set of tools for interfacial analysis in molecular simulations.
     Most major configuration and trajectory formats can be read, thanks to MDAnalysis.
