@@ -1,6 +1,6 @@
 {% set name = "pytim" %}
-{% set version = "0.8.1" %}
-{% set sha256 = "93e934beaead8161404579311d547f7d0320ed21d3f54433f75e69b140c2f7c9" %}
+{% set version = "0.8.2" %}
+{% set sha256 = "fc816595a92b801e8ad8d6c135758cce6bebc756694b02b561536fe0dbee3879" %}
 
 package:
   name: {{ name|lower }}
@@ -12,9 +12,9 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1000
-  skip: True  # [py3k or win]
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  number: 0
+  skip: true  # [py3k or win]
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
@@ -44,8 +44,8 @@ about:
   home: http://github.com/Marcello-Sega/pytim
   license: GPL-3.0
   license_family: GPL
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
-  summary: 'A python based tool for interfacial molecules analysis'
+  license_file: {{ environ["RECIPE_DIR"] }}/LICENSE
+  summary: A python based tool for interfacial molecules analysis
   description: |
     Pytim provides a set of tools for interfacial analysis in molecular simulations.
     Most major configuration and trajectory formats can be read, thanks to MDAnalysis.
