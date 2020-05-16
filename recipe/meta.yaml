@@ -13,8 +13,8 @@ source:
 
 build:
   number: 0
-  skip: true  # [py3k or win]
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  skip: True  # [py3k or win]
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   build:
@@ -24,14 +24,14 @@ requirements:
     - python
     - pip
     - cython >=0.24.1
-    - scipy >=1.0
-    - numpy
+    - scipy >=1.1.0
+    - numpy >=1.16.0
   run:
     - python
-    - scipy >=1.0
+    - scipy >=1.1.0
     - {{ pin_compatible('numpy') }}
-    - scikit-image >=0.13.0
-    - mdanalysis >=0.17
+    - scikit-image >=0.14.2
+    - mdanalysis >=0.19
     - pywavelets >=0.5.2
 
 test:
