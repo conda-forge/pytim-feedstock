@@ -13,7 +13,7 @@ source:
 
 build:
   number: 0
-  skip: True  # [py3k or win]
+  skip: True  # [py2k or win]
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
