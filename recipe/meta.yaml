@@ -13,7 +13,7 @@ source:
 
 build:
   number: 0
-  skip: True  # [py2k or win or osx]
+  skip: True  # [py2k or win or osx or python_impl == 'pypy']
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
