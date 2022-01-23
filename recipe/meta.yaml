@@ -12,8 +12,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
-  skip: True  # [py2k or win or osx or python_impl == 'pypy']
+  number: 1
+  skip: True  # [py2k or win or python_impl == 'pypy']
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
