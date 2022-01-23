@@ -1,6 +1,6 @@
 {% set name = "pytim" %}
-{% set version = "0.8.4" %}
-{% set sha256 = "bc76da641b4aa1b1264a8b84b331a1db99bb84a705be415d12281e123235b180" %}
+{% set version = "0.9.0" %}
+{% set sha256 = "8d8edb4310c6fe7ebeb8822d4abeb0000021a1b9982ae2cc7a579a25faec77eb" %}
 
 package:
   name: {{ name|lower }}
@@ -12,8 +12,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
-  skip: True  # [py2k or win or osx]
+  number: 0
+  skip: True  # [py2k or win or osx or python_impl == 'pypy']
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
@@ -31,7 +31,7 @@ requirements:
     - scipy >=1.1.0
     - {{ pin_compatible('numpy') }}
     - scikit-image >=0.14.2
-    - mdanalysis >=0.19
+    - mdanalysis >=2.0.0
     - pywavelets >=0.5.2
 
 test:
