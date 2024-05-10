@@ -1,6 +1,6 @@
 {% set name = "pytim" %}
-{% set version = "0.9.0" %}
-{% set sha256 = "8d8edb4310c6fe7ebeb8822d4abeb0000021a1b9982ae2cc7a579a25faec77eb" %}
+{% set version = "0.9.2" %}
+{% set sha256 = "7b758f95be74ed478adf89cfd85588b027a6f990783ddfc8d38e39720cc3d96d" %}
 
 package:
   name: {{ name|lower }}
@@ -12,13 +12,14 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 4
-  skip: True  # [py2k or win or python_impl == 'pypy']
+  number: 0
+  skip: true  # [py2k or win or python_impl == 'pypy']
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
   host:
     - python
