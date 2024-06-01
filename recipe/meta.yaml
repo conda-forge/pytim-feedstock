@@ -30,8 +30,8 @@ requirements:
   run:
     - python
     - scipy >=1.1.0
-    - scikit-image>=0.14.2
-    - gsd<=3.2.1
+    - scikit-image >=0.14.2
+    - gsd <=3.2.1
     - {{ pin_compatible('numpy') }}
     - scikit-image >=0.14.2
     - mdanalysis >=2.0.0
