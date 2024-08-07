@@ -1,6 +1,6 @@
 {% set name = "pytim" %}
-{% set version = "1.0.0" %}
-{% set sha256 = "ce3261c2f218487f6b201fc0c9a48370b197633c1f40b95a8b644bb11f63b6c4" %}
+{% set version = "1.0.1" %}
+{% set sha256 = "13c0dc93ceae4490494340d4b619df941b97a7fe23131fc2bc0ab8b055bcca20" %}
 
 package:
   name: {{ name|lower }}
@@ -22,19 +22,19 @@ requirements:
     - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
   host:
-    - python
+    - python >= 3.9
     - pip
     - cython >=0.24.1
     - scipy >=1.1.0
-    - numpy >=1.16.0
+    - numpy >=1.26.4,<2.0.0
   run:
-    - python
-    - scipy >=1.1.0
+    - python >= 3.9
+    - scipy >=1.6.0
     - scikit-image >=0.14.2
-    - gsd <=3.2.1
+    - gsd > 3.0.0
     - {{ pin_compatible('numpy') }}
     - scikit-image >=0.14.2
-    - mdanalysis >=2.0.0
+    - mdanalysis >=2.7.0
     - pywavelets >=0.5.2
 
 test:
