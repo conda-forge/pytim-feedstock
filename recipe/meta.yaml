@@ -22,16 +22,16 @@ requirements:
     - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
   host:
-    - python >= 3.9
+    - python >=3.9
     - pip
     - cython >=0.24.1
     - scipy >=1.1.0
     - numpy >=1.26.4,<2.0.0
   run:
-    - python >= 3.9
+    - python >=3.9
     - scipy >=1.6.0
     - scikit-image >=0.14.2
-    - gsd > 3.0.0
+    - gsd >3.0.0
     - {{ pin_compatible('numpy') }}
     - scikit-image >=0.14.2
     - mdanalysis >=2.7.0
