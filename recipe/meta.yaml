@@ -13,7 +13,7 @@ source:
 
 build:
   number: 0
-  skip: true  # [py2k or win or python_impl == 'pypy']
+  skip: true  # [py2k or win or python_impl == 'pypy' or py<39]
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
@@ -22,13 +22,13 @@ requirements:
     - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
   host:
-    - python >=3.9
+    - python
     - pip
     - cython >=0.24.1
     - scipy >=1.1.0
     - numpy >=1.26.4,<2.0.0
   run:
-    - python >=3.9
+    - python
     - scipy >=1.6.0
     - scikit-image >=0.14.2
     - gsd >3.0.0
