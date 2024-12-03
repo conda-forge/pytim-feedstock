@@ -8,11 +8,11 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py2k or win or python_impl == 'pypy' or py<39]
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
@@ -32,7 +32,6 @@ requirements:
     - scipy >=1.6.0
     - scikit-image >=0.14.2
     - gsd >3.0.0
-    - {{ pin_compatible('numpy') }}
     - scikit-image >=0.14.2
     - mdanalysis >=2.7.0
     - pywavelets >=0.5.2
