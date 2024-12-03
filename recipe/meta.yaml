@@ -1,6 +1,6 @@
 {% set name = "pytim" %}
-{% set version = "1.0.1" %}
-{% set sha256 = "13c0dc93ceae4490494340d4b619df941b97a7fe23131fc2bc0ab8b055bcca20" %}
+{% set version = "1.0.2" %}
+{% set sha256 = "b8eac216f3944fa32f620ef5b00531e5d972d1b43ed73b331453faddb718ed72" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
