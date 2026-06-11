@@ -1,6 +1,6 @@
 {% set name = "pytim" %}
-{% set version = "1.0.6" %}
-{% set sha256 = "08634238c294ad98cb4c0b7c8b61cdafcacb0eba27e34bbda5e17ecbe5700170" %}
+{% set version = "1.0.7" %}
+{% set sha256 = "5f858267c43128ea704e58c3051cc66d4f35d64f799d2977cc5d2f372499c9c6" %}
 
 package:
   name: {{ name|lower }}
@@ -26,7 +26,7 @@ requirements:
     - pip
     - setuptools
     - cython >=3.0.8
-    - scipy >=1.1.0
+    - scipy >=1.15.0
     - numpy >=2.1.3
   run:
     - python
